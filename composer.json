@@ -1,0 +1,30 @@
+{
+  "name": "laravel-tools/core",
+  "description": "This package provides a set of tools to help you develop Laravel applications.",
+  "homepage": "https://github.com/laravel-tools/core",
+  "license": "MIT",
+  "type": "library",
+  "require": {
+    "php": "^8.3"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^8.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelTools\\Core\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "LaravelTools\\Core\\CoreServiceProvider"
+      ],
+      "aliases": {
+      }
+    }
+  }
+}
